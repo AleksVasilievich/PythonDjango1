@@ -18,7 +18,8 @@ class ProductAdmin(admin.ModelAdmin):
     actions = [reset_quantity]
 
     # fields = ['name', 'description', 'added_date']
-    readonly_fields = ['added_date', 'price']
+    # readonly_fields = ['added_date', 'price']
+    readonly_fields = ['added_date']  # Удалено поле 'price' из readonly_fields
     fieldsets = [
         (
             None,
